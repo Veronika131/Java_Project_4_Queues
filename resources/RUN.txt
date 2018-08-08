@@ -1,0 +1,361 @@
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Test file: resources/tunes.txt
+
+NOTES:  Testing Jukeboxs class by enqueuing songs into different playlists,
+        by requesting to play less songs than the total number of songs in file.
+--------------------------------------------------------------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+Total number of songs in playlists: 16
+
+Songs in each playlist:
+
+favorites has 5 songs:
+
+♪ Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock;
+♪ Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock;
+♪ Stoned, 0:11:47, Dido, classic pop and rock;
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 4 songs:
+
+♪ Solo, 0:4:41, Working Week, classic pop and rock;
+♪ Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical;
+♪ Luka, 0:3:52, Suzanne Vega, classic pop and rock;
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 7 songs:
+
+♪ Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock;
+♪ Here With Me, 0:4:41, Dido, classic pop and rock;
+♪ Get Happy, 0:6:36, Jean Knight, classic pop and rock;
+♪ Let's Dance, 0:2:45, Jake Shimabukuro, folk;
+♪ Oh What a Feeling, 0:3:42, Gregory Isaac, classic pop and rock;
+♪ Separate Ways (Worlds Apart), 0:5:25, Journey, classic pop and rock;
+♪ Road Home, 0:5:8, The String Cheese Incident, folk;
+
+
+Enter your the number of songs yeou would like to play:
+7
+
+Playing 7 number of songs...
+Playing song title "Shadows - Original"
+Playing song title "Solo"
+Playing song title "Tom's Diner"
+Playing song title "Take Me Away"
+Playing song title "Nuvole Bianche"
+Playing song title "Here With Me"
+Playing song title "Stoned"
+
+Checking the size of each playlist:
+Playlist "favorites" is 2 song(s) remaining.
+Playlist "lounge" is 2 song(s) remaining.
+Playlist "road trip" is 5 song(s) remaining.
+
+Songs in each list:
+
+favorites has 2 songs:
+
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 2 songs:
+
+♪ Luka, 0:3:52, Suzanne Vega, classic pop and rock;
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 5 songs:
+
+♪ Get Happy, 0:6:36, Jean Knight, classic pop and rock;
+♪ Let's Dance, 0:2:45, Jake Shimabukuro, folk;
+♪ Oh What a Feeling, 0:3:42, Gregory Isaac, classic pop and rock;
+♪ Separate Ways (Worlds Apart), 0:5:25, Journey, classic pop and rock;
+♪ Road Home, 0:5:8, The String Cheese Incident, folk;
+
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+Test file: resources/tunes_truncated.txt
+
+NOTES:  Testing the boundary condition where requested number of songs is bigger than
+        total number of songs in file.
+------------------------------------------------------------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+Total number of songs in playlists: 3
+
+Songs in each playlist:
+
+favorites has 1 songs:
+
+♪ Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 1 songs:
+
+♪ Solo, 0:4:41, Working Week, classic pop and rock;
+
+
+road trip has 1 songs:
+
+♪ Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock;
+
+
+Enter your the number of songs yeou would like to play:
+5
+
+Playing 5 number of songs...
+Playing song title "Shadows - Original"
+Playing song title "Solo"
+Playing song title "Tom's Diner"
+
+Checking the size of each playlist:
+Playlist "favorites" has *no* songs remaining.
+Playlist "lounge" has *no* songs remaining.
+Playlist "road trip" has *no* songs remaining.
+
+Songs in each list:
+
+favorites has 0 songs:
+
+
+
+lounge has 0 songs:
+
+
+
+road trip has 0 songs:
+
+
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Test file: resources/tunes_test3.txt
+
+NOTES:  Example of testing file that has songs only in 2 out of 3 playlists.
+--------------------------------------------------------------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+Total number of songs in playlists: 9
+
+Songs in each playlist:
+
+favorites has 5 songs:
+
+♪ Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock;
+♪ Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock;
+♪ Stoned, 0:11:47, Dido, classic pop and rock;
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 4 songs:
+
+♪ Solo, 0:4:41, Working Week, classic pop and rock;
+♪ Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical;
+♪ Luka, 0:3:52, Suzanne Vega, classic pop and rock;
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 0 songs:
+
+
+
+Enter your the number of songs yeou would like to play:
+6
+
+Playing 6 number of songs...
+Playing song title "Shadows - Original"
+Playing song title "Solo"
+WARNING: playlist "road trip" is empty!
+Playing song title "Take Me Away"
+Playing song title "Nuvole Bianche"
+WARNING: playlist "road trip" is empty!
+Playing song title "Stoned"
+Playing song title "Luka"
+
+Checking the size of each playlist:
+Playlist "favorites" is 2 song(s) remaining.
+Playlist "lounge" is 1 song(s) remaining.
+Playlist "road trip" has *no* songs remaining.
+
+Songs in each list:
+
+favorites has 2 songs:
+
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 1 songs:
+
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 0 songs:
+
+
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Test file: resources/tunes_test4.txt
+
+NOTES:  Example of testing file that has no songs in any of the playlists.
+--------------------------------------------------------------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+Total number of songs in playlists: 0
+
+Songs in each playlist:
+
+favorites has 0 songs:
+
+
+
+lounge has 0 songs:
+
+
+
+road trip has 0 songs:
+
+
+
+Enter your the number of songs yeou would like to play:
+3
+
+Playing 3 number of songs...
+
+Checking the size of each playlist:
+Playlist "favorites" has *no* songs remaining.
+Playlist "lounge" has *no* songs remaining.
+Playlist "road trip" has *no* songs remaining.
+
+Songs in each list:
+
+favorites has 0 songs:
+
+
+
+lounge has 0 songs:
+
+
+
+road trip has 0 songs:
+
+
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Test file: resources/tunes.txt
+
+NOTES:  Example of testing file that has songs but requesting to play 0 songs.
+--------------------------------------------------------------------------------------------------------
+
+Welcome! We have over 59600 in FoothillTunes store!
+Total number of songs in playlists: 16
+
+Songs in each playlist:
+
+favorites has 5 songs:
+
+♪ Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock;
+♪ Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock;
+♪ Stoned, 0:11:47, Dido, classic pop and rock;
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 4 songs:
+
+♪ Solo, 0:4:41, Working Week, classic pop and rock;
+♪ Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical;
+♪ Luka, 0:3:52, Suzanne Vega, classic pop and rock;
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 7 songs:
+
+♪ Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock;
+♪ Here With Me, 0:4:41, Dido, classic pop and rock;
+♪ Get Happy, 0:6:36, Jean Knight, classic pop and rock;
+♪ Let's Dance, 0:2:45, Jake Shimabukuro, folk;
+♪ Oh What a Feeling, 0:3:42, Gregory Isaac, classic pop and rock;
+♪ Separate Ways (Worlds Apart), 0:5:25, Journey, classic pop and rock;
+♪ Road Home, 0:5:8, The String Cheese Incident, folk;
+
+
+Enter your the number of songs yeou would like to play:
+0
+
+Playing 0 number of songs...
+
+Checking the size of each playlist:
+Playlist "favorites" is 5 song(s) remaining.
+Playlist "lounge" is 4 song(s) remaining.
+Playlist "road trip" is 7 song(s) remaining.
+
+Songs in each list:
+
+favorites has 5 songs:
+
+♪ Shadows - Original, 0:0:25, Blue Oyster Cult, classic pop and rock;
+♪ Take Me Away, 0:4:32, Blue Oyster Cult, classic pop and rock;
+♪ Stoned, 0:11:47, Dido, classic pop and rock;
+♪ We Belong, 0:3:43, Pat Benatar, classic pop and rock;
+♪ Stairway To The Stars, 0:3:46, Blue Oyster Cult, classic pop and rock;
+
+
+lounge has 4 songs:
+
+♪ Solo, 0:4:41, Working Week, classic pop and rock;
+♪ Nuvole Bianche, 0:5:58, Ludovico Einaudi, classical;
+♪ Luka, 0:3:52, Suzanne Vega, classic pop and rock;
+♪ Traffic, 0:4:5, Dawn Landes, classic pop and rock;
+
+
+road trip has 7 songs:
+
+♪ Tom's Diner, 0:2:40, Suzanne Vega, classic pop and rock;
+♪ Here With Me, 0:4:41, Dido, classic pop and rock;
+♪ Get Happy, 0:6:36, Jean Knight, classic pop and rock;
+♪ Let's Dance, 0:2:45, Jake Shimabukuro, folk;
+♪ Oh What a Feeling, 0:3:42, Gregory Isaac, classic pop and rock;
+♪ Separate Ways (Worlds Apart), 0:5:25, Journey, classic pop and rock;
+♪ Road Home, 0:5:8, The String Cheese Incident, folk;
+
+
+Done with MyTunes.
+
+Process finished with exit code 0
+
